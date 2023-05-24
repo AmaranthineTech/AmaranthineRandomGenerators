@@ -49,12 +49,13 @@ public extension Float {
     }
 }
 
+#if(os(iOS))
 @available(iOS 14.0, *)
 public extension Float16 {
     /**
      Generates a value of type `Float16` that is rounded off to the specified number of places.
      
-     - since: iOS 14, macOS 11
+     - since: iOS 14
      - requires: Swift 5.5 or later
      - parameter count: This is the number of spaces
      - author: Arun Patwardhan
@@ -70,7 +71,7 @@ public extension Float16 {
         return Float16((Double(self) * divisor).rounded() / divisor)
     }
 }
-
+#endif
 public extension Float80 {
     /**
      Generates a value of type `Float80` that is rounded off to the specified number of places.
