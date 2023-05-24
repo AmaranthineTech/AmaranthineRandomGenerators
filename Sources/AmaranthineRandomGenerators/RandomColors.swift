@@ -6,7 +6,7 @@
 //
 
 
-import UIKit
+
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -31,6 +31,8 @@ public extension Color {
     }
 }
 
+#if canImport(UIKit)
+import UIKit
 public extension UIColor {
     /**
      Generate a `UIColor` value
@@ -52,5 +54,5 @@ public extension UIColor {
                 alpha: 1.0)
     }
 }
-
+#endif
 
