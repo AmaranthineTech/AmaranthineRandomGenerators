@@ -1,0 +1,75 @@
+@Tutorials(name: "Using the different types available") {
+    @Intro(title: "How to use the different types") {
+        In this tutorial we will look at creating and using the different types.
+    }
+    
+    @Volume(name: "Text based content") {
+        
+        This is where we focus on creating random values for text based content.
+        @Image(source: text.png, alt: "Text")
+        
+        @Chapter(name: "Random strings") {
+            In this chapter we look at how to generate random strings.
+            @Image(source: text.png, alt: "Text")
+            @TutorialReference(tutorial: "doc:TextBasedContentTutorial")
+        }
+    }    
+    
+    @Volume(name: "UI based content") {
+        This is where we focus on UI elements such as Colors and images.
+        
+        @Image(source: ui.png, alt: "UI")
+        
+        @Chapter(name: "Generate random Color values") {
+            In this chapter we look at how to generate random `SwiftUI` `Color` types.
+            @Image(source: ui.png, alt: "UI")
+            @TutorialReference(tutorial: "doc:UIBasedContentTutorial")
+        }
+    }
+    
+    @Volume(name: "Enumeration based content") {
+        Explore the Enumeration based content.
+        
+        @Image(source: enum.png, alt: "Enumeration of scores")
+        
+        @Chapter(name: "Usage") {
+            Creating the ``AmaranthineRandomGenerators/Scores`` type
+            @Image(source: enum.png, alt: "Enumeration of scores")
+            @TutorialReference(tutorial: "doc:EnumerationBasedContentTutorial")
+        }
+    }
+    
+    @Volume(name: "Debug log operations") {
+        Get familiar with log operations.
+        
+        @Image(source: log.png, alt: "Log operations")
+        
+        @Chapter(name: "Creation") {
+            In this chapter we will learn how to create the AppLogger
+            @Image(source: log.png, alt: "Log operations")
+            @TutorialReference(tutorial: "doc:DebugLogOperationsTutorial")
+        }
+    }
+    
+    @Resources {
+        Explore more resources for learning about the different features that we have used in Swift.
+
+        @Videos(destination: "https://www.youtube.com/channel/UC127UHd8V7bxPQYnd9QrN8w") {
+            To view various blog articles and videos.
+
+            - [My Blog](https://www.arunpatwardhan.com/)
+        }
+        
+        @SampleCode(destination: "https://github.com/AmaranthineTech") {
+            Download and explore sample code projects.
+
+            - [Sample code](https://github.com/AmaranthineTech/)
+        }
+        
+        @Documentation(destination: "https://amaranthinerandomgenerators.github.io/documentation/amaranthinerandomgenerators/") {
+            Browse and search documentation for ``AmaranthineRandomGenerators`` project online.
+
+            - [AmaranthineRandomGenerators](https://amaranthinerandomgenerators.github.io/documentation/amaranthinerandomgenerators/)
+        }
+    }
+}

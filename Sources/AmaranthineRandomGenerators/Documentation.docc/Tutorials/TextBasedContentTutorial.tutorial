@@ -1,0 +1,101 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Working with text based content") {
+        Creating random strings, dates, and floating point numbers that are rounded off.
+        
+        @Image(source: text.png, alt: "Text")
+    }
+    
+    @Section(title: "Generating random names") {
+        @ContentAndMedia {
+            Random names.
+            
+            @Image(source: text.png, alt: "Random names")
+        }
+        
+        @Steps {
+            @Step {
+                Import the framework.
+                
+                @Code(name: "randomNamesDemo.swift", file: randomNamesDemo-1.swift)
+            }
+            
+            @Step {
+                Use the RandomName type to invoke the static method to generate the name
+                
+                @Code(name: "randomNamesDemo.swift", file: randomNamesDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generating random lines") {
+        @ContentAndMedia {
+            Random sentences.
+            
+            @Image(source: line.png, alt: "Random sentences")
+        }
+        
+        @Steps {
+            @Step {
+                Import the framework: ``AmaranthineRandomGenerators``.
+                
+                @Code(name: "randomLinesDemo.swift", file: randomLinesDemo-1.swift)
+            }
+            
+            @Step {
+                Use the ``AmaranthineRandomGenerators/RandomLines`` type to invoke the static method to generate the name
+                
+                @Code(name: "randomLinesDemo.swift", file: randomLinesDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generating random date") {
+        @ContentAndMedia {
+            Random Date.
+            
+            @Image(source: calendar.png, alt: "Random date")
+        }
+        
+        @Steps {
+            @Step {
+                Import the framework: ``AmaranthineRandomGenerators``.
+                
+                @Code(name: "randomDatesDemo.swift", file: randomDatesDemo-1.swift)
+            }
+            
+            @Step {
+                Use the `Date` extension method to generate the `Date`
+                
+                @Code(name: "randomDatesDemo.swift", file: randomDatesDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generating rounded float") {
+        @ContentAndMedia {
+            Rounded float.
+            
+            @Image(source: number.png, alt: "Rounded float")
+        }
+        
+        @Steps {
+            @Step {
+                Import the framework: ``AmaranthineRandomGenerators``.
+                
+                @Code(name: "roundedFloatDemo.swift", file: roundedFloatDemo-1.swift)
+            }
+            
+            @Step {
+                Declare a variable that holds a floating value wth multiple decimal places.
+                
+                @Code(name: "roundedFloatDemo.swift", file: roundedFloatDemo-2.swift)
+            }
+            
+            @Step {
+                Use the `Date` type extension method to generate the rounded `Float`
+                
+                @Code(name: "roundedFloatDemo.swift", file: roundedFloatDemo-3.swift)
+            }
+        }
+    }
+}

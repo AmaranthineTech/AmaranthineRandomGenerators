@@ -1,0 +1,159 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Using the AppLogger") {
+        In this tutrial we will look at how we can use the ``AmaranthineRandomGenerators/AppLogger`` to write messages to `stdout` and to the unified logging system.
+        
+        @Image(source: log.png, alt: "Unified Logging")
+    }
+    
+    @Section(title: "Preparing the logger for use") {
+        @ContentAndMedia {
+            We will look at how we can prepare the Logger for use.
+            
+            @Image(source: logCreate.png, alt: "Setup the App logger.")
+        }
+        
+        @Steps {
+            @Step {
+                First we will start off by importing the framework.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-1.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the name of the sub system. This is typically your App's bundle id. For more information read the <doc:DebugLogOperations>.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-2.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the name of the category. This is typically idetified by the part of your app.. For more information read the <doc:DebugLogOperations>.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-3.swift)
+            }
+            
+            @Step {
+                Finally create the applogger using the above 2 variables.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-4.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Writing only to stdout") {
+        @ContentAndMedia {
+            We will use the logger to write to stdout.
+            
+            @Image(source: stdout.png, alt: "Write to stdout.")
+        }
+        
+        @Steps {
+            @Step {
+                Resume from section 1.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-4.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the enum value the specified the type of operation we wish to perform.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-5.swift)
+            }
+            
+            @Step {
+                Invoke the ``AmaranthineRandomGenerators/AppLogger/customLog(message:severity:operation:)`` method to send the message for the desired operatin.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-6.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Writing only to log file") {
+        @ContentAndMedia {
+            We will use the logger to write to the unified logging system.
+            
+            @Image(source: logWrite.png, alt: "Write to log file.")
+        }
+        
+        @Steps {
+            @Step {
+                Resume from section 1.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-4.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the enum value the specified the type of operation we wish to perform.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-7.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the enum value the urgency level of the log.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-8.swift)
+            }
+            
+            @Step {
+                Invoke the ``AmaranthineRandomGenerators/AppLogger/customLog(message:severity:operation:)`` method to send the message for the desired operatin.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-9.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Writing to both stdout and log file") {
+        @ContentAndMedia {
+            We will use the logger to write to both `stdout` and the unified logging system.
+            
+            @Image(source: logDouble.png, alt: "Write to both stdout and log file.")
+        }
+        
+        @Steps {
+            @Step {
+                Resume from section 1.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-4.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the enum value the specified the type of operation we wish to perform.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-10.swift)
+            }
+            
+            @Step {
+                Declare a variable to hold the enum value the urgency level of the log.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-11.swift)
+            }
+            
+            @Step {
+                Invoke the ``AmaranthineRandomGenerators/AppLogger/customLog(message:severity:operation:)`` method to send the message for the desired operatin.
+                
+                @Code(name: "apploggerDemo.swift", file: apploggerDemo-12.swift)
+            }
+        }
+    }
+    
+    @Assessments {
+        @MultipleChoice {
+            We can only write to `stdout` and the unified logging system simultaneously.
+            
+            @Choice(isCorrect: false) {
+                TRUE
+                
+                @Justification(reaction: "Try again!") {
+                    Maybe something else.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                FALSE
+                
+                @Justification(reaction: "Well done!") {
+                    We can write to either one of the 2 or both.
+                }
+            }
+        }
+    }
+}

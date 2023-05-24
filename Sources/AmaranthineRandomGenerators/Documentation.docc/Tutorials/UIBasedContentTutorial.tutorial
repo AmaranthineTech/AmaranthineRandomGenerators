@@ -1,0 +1,95 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Random UI components") {
+        Generate colors and Images
+        
+        @Image(source: ui.png, alt: "UI Components")
+    }
+    
+    @Section(title: "Generate random SwiftUI colors") {
+        @ContentAndMedia {
+            Generate random SwiftUI Colors.
+            
+            @Image(source: palette.png, alt: "SwiftUI Colors")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "swiftUIColorDemo.swift", file: swiftUIColorDemo-1.swift)
+            }
+            
+            @Step {
+                Invoke the method declared in the Color extension to generate random colors.
+                
+                @Code(name: "swiftUIColorDemo.swift", file: swiftUIColorDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generate random UIKit colors") {
+        @ContentAndMedia {
+            Generate random UIKit Colors.
+            
+            @Image(source: palette.png, alt: "UIKit Colors")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "uikitColorDemo.swift", file: uikitColorDemo-1.swift)
+            }
+            
+            @Step {
+                Invoke the method declared in the Color extension to generate random colors.
+                
+                @Code(name: "uikitColorDemo.swift", file: uikitColorDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generate random AppKit colors") {
+        @ContentAndMedia {
+            Generate random NSColor Colors.
+            
+            @Image(source: colorPalette.png, alt: "AppKit Colors")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "appkitColorDemo.swift", file: appkitColorDemo-1.swift)
+            }
+            
+            @Step {
+                Invoke the method declared in the Color extension to generate random colors.
+                
+                @Code(name: "appkitColorDemo.swift", file: appkitColorDemo-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generate random images") {
+        @ContentAndMedia {
+            Generate random images.
+            
+            @Image(source: sfSymbolsIcon.png, alt: "System image")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "imageDemo.swift", file: imageDemo-1.swift)
+            }
+            
+            @Step {
+                Use static method ``AmaranthineRandomGenerators/RandomIcon/getRandomIcon()`` declared in ``AmaranthineRandomGenerators/RandomIcon`` type to generate an image.
+                
+                @Code(name: "imageDemo.swift", file: imageDemo-2.swift)
+            }
+        }
+    }
+}

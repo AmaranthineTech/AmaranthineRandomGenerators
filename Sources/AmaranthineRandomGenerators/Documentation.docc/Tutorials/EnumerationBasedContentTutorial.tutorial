@@ -1,0 +1,75 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Working with the Scores enum") {
+        In this chapter we will get familiar with the ``AmaranthineRandomGenerators/Scores`` enum.
+        
+        @Image(source: enum.png, alt: "Enumeration")
+    }
+    
+    @Section(title: "Creating a score value") {
+        @ContentAndMedia {
+            We will be looking at the different ways of creating a ``AmaranthineRandomGenerators/Scores`` value.
+            
+            @Image(source: enumColor.png, alt: "Scores enum")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "scoresDemo.swift", file: scoresDemo-1.swift)
+            }
+            
+            @Step {
+                Declare a variable of type ``AmaranthineRandomGenerators/Scores`` and assign it a value directly.
+                
+                @Code(name: "scoresDemo.swift", file: scoresDemo-2.swift)
+            }
+            
+            @Step {
+                Declare a variable of type ``AmaranthineRandomGenerators/Scores`` and assign it a value using the ``AmaranthineRandomGenerators/Scores/scoreFrom(Integer:)`` method.
+                
+                @Code(name: "scoresDemo.swift", file: scoresDemo-3.swift)
+            }
+            
+            @Step {
+                Declare a variable of type ``AmaranthineRandomGenerators/Scores`` and assign it a value using the ``AmaranthineRandomGenerators/Scores/scoreFrom(Text:)`` method.
+                
+                @Code(name: "scoresDemo.swift", file: scoresDemo-4.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Generating other values from a score value") {
+        @ContentAndMedia {
+            We will look at how to convert our ``AmaranthineRandomGenerators/Scores`` value to an `Int` & `String`.
+            
+            @Image(source: enumNum.png, alt: "Scores enum")
+        }
+        
+        @Steps {
+            @Step {
+                Import the ``AmaranthineRandomGenerators`` framework
+                
+                @Code(name: "scoresConversionDemo.swift", file: scoresConversionDemo-1.swift)
+            }
+            
+            @Step {
+                Declare a variable of type ``AmaranthineRandomGenerators/Scores`` and assign it a value directly.
+                
+                @Code(name: "scoresConversionDemo.swift", file: scoresConversionDemo-2.swift)
+            }
+            
+            @Step {
+                Declare a variable of type `Int` and assign it a value using the ``AmaranthineRandomGenerators/Scores/integerFrom(Score:)`` method.
+                
+                @Code(name: "scoresConversionDemo.swift", file: scoresConversionDemo-3.swift)
+            }
+            
+            @Step {
+                Declare a variable of type `String` and assign it a value using the string interpolation operation.
+                
+                @Code(name: "scoresConversionDemo.swift", file: scoresConversionDemo-4.swift)
+            }
+        }
+    }
+}
