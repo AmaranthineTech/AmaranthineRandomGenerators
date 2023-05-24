@@ -21,7 +21,7 @@ public extension NSColor {
      
       [www.amaranthine.in](https://amaranthine.in)
      */
-    func randomColor() -> NSColor {
+    static func randomColor() -> NSColor {
         NSColor(red: CGFloat.random(in: 0.0...1.0),
                 green: CGFloat.random(in: 0.0...1.0),
                 blue: CGFloat.random(in: 0.0...1.0),

@@ -24,7 +24,7 @@ public extension Color {
      
       [www.amaranthine.in](https://amaranthine.in)
      */
-    func randomColor() -> Color {
+    static func randomColor() -> Color {
         Color(red: Double.random(in: 0.0...1.0),
               green: Double.random(in: 0.0...1.0),
               blue: Double.random(in: 0.0...1.0))
@@ -47,7 +47,7 @@ public extension UIColor {
      
       [www.amaranthine.in](https://amaranthine.in)
      */
-    func randomColor() -> UIColor {
+    static func randomColor() -> UIColor {
         UIColor(red: CGFloat.random(in: 0.0...1.0),
                 green: CGFloat.random(in: 0.0...1.0),
                 blue: CGFloat.random(in: 0.0...1.0),
