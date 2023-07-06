@@ -72,6 +72,7 @@ public extension Float16 {
     }
 }
 #endif
+#if arch(x86_64)
 public extension Float80 {
     /**
      Generates a value of type `Float80` that is rounded off to the specified number of places.
@@ -92,3 +93,4 @@ public extension Float80 {
         return (self * divisor).rounded() / divisor
     }
 }
+#endif
